@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://forest-zhanglaoshi.github.io/why-you-need-a-uk-sim/sitemap.xml
