@@ -1,6 +1,4 @@
-# 为什么需要英国卡？
-
-这是一个介绍英国实体卡、giffgaff 英国 SIM 卡和海外号码长期维护方式的中文展示网站。
+# 为什么你会需要一张英国实体卡？
 
 网站地址：<https://forest-zhanglaoshi.github.io/why-you-need-a-uk-sim/>
 
