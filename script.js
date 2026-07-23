@@ -157,8 +157,15 @@ function initHeroPhysics() {
   });
 
   const mouse = Mouse.create(hero);
+  // Matter.js binds wheel and touch handlers that call preventDefault().
+  // Keep mouse dragging on desktop, but always leave page scrolling and
+  // pinch-zooming under the browser's control on touch devices and WebViews.
+  mouse.element.removeEventListener('wheel', mouse.mousewheel);
   mouse.element.removeEventListener('mousewheel', mouse.mousewheel);
   mouse.element.removeEventListener('DOMMouseScroll', mouse.mousewheel);
+  mouse.element.removeEventListener('touchmove', mouse.mousemove);
+  mouse.element.removeEventListener('touchstart', mouse.mousedown);
+  mouse.element.removeEventListener('touchend', mouse.mouseup);
   const mouseConstraint = MouseConstraint.create(engine, {
     mouse,
     constraint: {
