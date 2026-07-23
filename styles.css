@@ -243,13 +243,15 @@ dd {
 
 .hero {
   position: relative;
-  min-height: 100dvh;
+  min-height: 100vh;
+  min-height: 100svh;
   overflow: hidden;
   display: grid;
   place-items: start center;
   padding: 16vh var(--section-x) 250px;
   background: var(--canvas);
   cursor: grab;
+  touch-action: pan-y pinch-zoom;
 }
 
 .hero:active {
@@ -1012,7 +1014,8 @@ dd {
   }
 
   .hero {
-    min-height: 100dvh;
+    min-height: 100vh;
+    min-height: 100svh;
     padding-top: 15vh;
     padding-bottom: 190px;
   }
